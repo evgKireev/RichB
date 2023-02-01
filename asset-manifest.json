@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/RichB/static/css/main.6bca64bb.css",
+    "main.js": "/RichB/static/js/main.35cd83d7.js",
+    "static/media/AnyConv.com__Exo2.0-Thin.woff": "/RichB/static/media/AnyConv.com__Exo2.0-Thin.eff19c8fa2af5fab0915.woff",
+    "index.html": "/RichB/index.html",
+    "main.6bca64bb.css.map": "/RichB/static/css/main.6bca64bb.css.map",
+    "main.35cd83d7.js.map": "/RichB/static/js/main.35cd83d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bca64bb.css",
+    "static/js/main.35cd83d7.js"
+  ]
+}
