@@ -1,0 +1,47 @@
+@import '../../scss/vars';
+
+.accordionItem {
+  padding-left: 13px;
+  padding-right: 11px;
+  &:last-child {
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.active {
+  color: $acsent;
+}
+
+.accordionList {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  height: 46px;
+  cursor: pointer;
+  padding-left: 13px;
+  padding-top: 12px;
+  &:hover {
+    background: #f2f2f2;
+    border-radius: 3px;
+  }
+}
+
+.accordionListActive {
+  background-color: rgba(37, 150, 9, 0.15);
+  color: $acsent;
+}

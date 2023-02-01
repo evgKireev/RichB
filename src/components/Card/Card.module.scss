@@ -1,0 +1,125 @@
+@import '../../scss/vars';
+.wrapper {
+  position: relative;
+}
+.Card {
+  position: relative;
+  width: 282px;
+  height: 405px;
+  background-color: #fff;
+  border-top: 6px solid $acsent;
+  padding: 30px;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+}
+
+.img {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 31px;
+}
+
+.subTitle {
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $acsent;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 74px;
+  font-weight: 600;
+}
+
+.Postgraduate,
+.time {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+
+.time {
+  margin-bottom: 29px;
+}
+
+.price {
+  display: none;
+}
+
+.CardInfo {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  transition: all 0.8s;
+}
+
+.CardInfoActive {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.8s;
+}
+
+// .closes {
+//   position: absolute;
+//   // top: 20px;
+//   // left: 20px;
+//   cursor: pointer;
+//   transition: all 0.5s;
+//   &:hover {
+//     transform: scale(1.1);
+//     transition: all 0.5s;
+//   }
+// }
+
+@media (max-width: 390px) {
+  .Card {
+    width: 330px;
+    height: 330px;
+    padding: 23px 15px 20px 15px;
+  }
+  .img {
+    margin-bottom: 14px;
+  }
+  .subTitle {
+    margin-bottom: 8px;
+  }
+  .title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 6px;
+  }
+  .Postgraduate,
+  .time {
+    margin-bottom: 67px;
+    gap: 0;
+    svg {
+      display: none;
+    }
+  }
+  .time {
+    display: none;
+  }
+  .time {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .price {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,74 @@
+@import '_vars.scss';
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Helvetica', system-ui, Tahoma, sans-serif;
+  background-color: $gb;
+  color: $text;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 60px 126px 59px 122px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 46px;
+  margin-bottom: 30px;
+}
+
+.arrow {
+  display: none;
+}
+
+.inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.Cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 22px;
+}
+
+.refreah {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+
+@media (max-width: 760px) {
+  .container {
+    padding: 25px 32px;
+  }
+}
+
+@media (max-width: 630px) {
+  .container {
+    padding: 15px 22px;
+  }
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .arrow {
+    display: block;
+  }
+}
